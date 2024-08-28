@@ -1,0 +1,73 @@
+*{
+    color:black;
+    box-sizing: content-box;
+}
+header{
+    font-weight: bold;
+    font-size: clamp(1.25rem, 1rem + 1.3333vw, 2rem);
+}
+p{
+    font-size: 16px;
+    overflow-wrap: break-word;
+}
+.code-info{
+    background-color: rgb(160, 160, 160);
+    color: rgb(44, 44, 44);
+    display: inline-block;
+    padding: 2px;
+}
+.main-section{
+    border-bottom: 1px solid rgb(170, 170, 170);
+    padding: 15px;
+    margin: 10px;
+}
+li {
+    list-style-type: none; /* Прибираємо маркери у списку */
+}
+.main-section li:before {
+    content: "| "; /* Додаємо в якості маркера символ */
+    color: blue;
+    font-weight: bolder;
+}
+pre{
+    background-color: rgb(255, 242, 219);
+    border: 2px dashed rgb(207, 207, 207) ;
+    display: inline-block;
+    padding: 4px;
+    overflow-x:scroll;
+    width: 100%;
+}
+#navbar ul{
+    overflow-y: scroll;
+    height:200px;
+    width: 80%;
+    margin: 10px auto;
+}
+#navbar ul li{
+    font-size: clamp(1rem, 0.9167rem + 0.4444vw, 1.25rem);
+    border: 1px solid gray;
+    padding: 5px;
+}
+#navbar a{
+    text-decoration:none;
+}
+#navbar header{
+    text-align: center;
+}
+@media screen and (min-width: 992px) {
+    #navbar{
+        position: fixed;
+        left:0;
+        height: 100vh;
+        width:30vw;
+    }
+    #main-doc{
+        position: relative;
+        left: 30vw;
+        width:60vw;
+    }
+    #navbar ul{
+        height: 80vh;
+        margin: 10px 10px 10px 0;
+    }
+}
