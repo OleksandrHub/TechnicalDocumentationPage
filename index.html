@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Documentation on the basic HTML5 template</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Documentation on the basic HTML5 template</header>
+            <ul>
+                <li><a class="nav-link" href="#What_is_an_HTML_5_boilerplate?">What is an HTML 5 boilerplate?</a></li>
+                <li><a class="nav-link" href="#Example_of_HTML_5_boilerplate">Example of HTML 5 boilerplate</a></li>
+                <li><a class="nav-link" href="#What_is_a_doctype_in_HTML?">What is a doctype in HTML?</a></li>
+                <li><a class="nav-link" href="#What_is_the_HTML_root_element?">What is the HTML root element?</a></li>
+                <li><a class="nav-link" href="#What_are_head_tags_in_HTML?">What are head tags in HTML?</a></li>
+                <li><a class="nav-link" href="#What_is_UTF-8_character_encoding?">What is UTF-8 character encoding?</a></li>
+                <li><a class="nav-link" href="#What_is_the_viewport_meta_tag_in_HTML?">What is the viewport meta tag in HTML?</a></li>
+                <li><a class="nav-link" href="#What_does_X-UA-Compatible_mean?">What does X-UA-Compatible mean?</a></li>
+                <li><a class="nav-link" href="#What_are_HTML_title_tags?">What are HTML title tags?</a></li>
+                <li><a class="nav-link" href="#CSS_stylesheet">CSS stylesheet</a></li>
+                <li><a class="nav-link" href="#Script_tags_in_HTML">Script tags in HTML</a></li>
+                <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="What_is_an_HTML_5_boilerplate?">
+                <header>What is an HTML 5 boilerplate?</header>
+                <article>
+                    <p>According to <a href="https://en.wikipedia.org/wiki/Boilerplate_code#HTML">Wikipedia</a>,</p>
+                    <ul>
+                        <li>boilerplate code or just boilerplate are sections of</li>
+                        <li>code that are repeated in multiple places with little to</li>
+                        <li>no variation.</li>
+                    </ul>
+                    <p>A boilerplate in HTML is a template you will add at the start of your project. You should add this boilerplate to all of your HTML pages.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Example_of_HTML_5_boilerplate">
+                <header>Example of HTML 5 boilerplate</header>
+                <p>Let's take a look at a basic example.
+                    <code><pre>
+< !DOCTYPE html >
+< html lang="en" >
+< head >
+    < meta charset="UTF-8" >
+    < meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    < meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    < title HTML 5 Boilerplate /title >
+    < link rel="stylesheet" href="style.css" >
+< /head >
+< body >
+> script src="index.js"  /script >
+< / body >
+< / html >
+                    </pre></code>
+                </p>
+            </section>
+            <section class="main-section" id="What_is_a_doctype_in_HTML?">
+                <header>What is a doctype in HTML?</header>
+                <p>
+                    The first line in your HTML code should be the doctype declaration. A doctype tells the browser what version of HTML the page is written in.
+                </p>
+                    <code><pre>< !DOCTYPE html ></pre></code>
+                <p>
+                    If you forget to include this line of code in your file, then some of the HTML 5 tags like <span class="code-info"> < article >, < footer >, and < header > </span> may not be supported by the browser.
+                </p>
+            </section>
+            <section class="main-section" id="What_is_the_HTML_root_element?">
+                <header>What is the HTML root element?</header>
+                <p>
+                    The <span class="code-info">< html ></span> tag is the top level element of the HTML file. You will nest the <span class="code-info"> < head > and < body> </span> tags inside of it.
+                </p>    
+                    <code><pre>
+< !DOCTYPE html >
+< html lang="en" >
+    < head>< /head>
+    < body>< /body>
+< /html>                                               
+                    </pre></code>
+                <p>
+                    The <span class="code-info">lang</span> attribute inside the opening <span class="code-info">< html ></span> tag sets the language for the page. It is also good to include it for accessibility reasons, because screen readers will know how to properly pronounce the text.
+                </p>
+            </section>
+            <section class="main-section" id="What_are_head_tags_in_HTML?">
+                <header>What are head tags in HTML?</header>
+                <p>The <span class="code-info"> < head > </span> tags contain information that is processed by machines. Inside the <span class="code-info">< head ></span> tags, you will nest metadata which is data that describes the document to the machine.
+                <code><pre>
+< head>
+    < meta charset="UTF-8">
+    < meta name="viewport" content="width=device-width, initial-scale=1.0">
+    < meta http-equiv="X-UA-Compatible" content="ie=edge">
+    < title>HTML 5 Boilerplate< /title>
+    < link rel="stylesheet" href="style.css">
+< /head>        
+                </pre></code></p>
+            </section>
+            <section class="main-section" id="What_is_UTF-8_character_encoding?">
+                <header>What is UTF-8 character encoding?</header>
+                <p>
+                    UTF-8 is the standard character encoding you should use in your web pages. This will usually be the first <span class="code-info">< meta > </span> tag shown in the <span class="code-info">< head ></span> element.
+                </p>
+                    <code><pre>< meta charset="UTF-8"></pre></code>
+                <p>    
+                    According to the <a href="https://www.w3.org/International/questions/qa-choosing-encodings">World Wide Web Consortium</a>,
+                </p>
+                <ul>
+                    <li>A Unicode-based encoding such as UTF-8 can support</li>
+                    <li>many languages and can accommodate pages and</li>
+                    <li>forms in any mixture of those languages. Its use also</li>
+                    <li>eliminates the need for server-side logic to</li>
+                    <li>individually determine the character encoding for</li>
+                    <li>each page served or each incoming form submission.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="What_is_the_viewport_meta_tag_in_HTML?">
+                <header>What is the viewport meta tag in HTML?</header>
+                <p>This tag renders the width of the page to the width of the device's screen size. If you have a mobile device that is 600px wide, then the browser window will also be 600px wide.
+                The initial-scale controls the zoom level. The value of 1 for the initial-scale prevents the default zoom by browsers.
+                <pre><code>< meta name="viewport" content="width=device-width, initial-scale=1.0"></code></pre>
+                </p>
+            </section>
+            <section class="main-section" id="What_does_X-UA-Compatible_mean?">
+                <header>What does X-UA-Compatible mean?</header>
+                <p>
+                    This <span class="code-info">< meta></span> tag specifies the document mode for Internet Explorer. IE=edge is the highest supported mode.
+                    <pre><code>< meta http-equiv="X-UA-Compatible" content="ie=edge"></code></pre>
+                </p>
+            </section>
+            <section class="main-section" id="What_are_HTML_title_tags?">
+                <header>What are HTML title tags?</header>
+                <p>The <span class="code-info">< title></span> tag is the title for the web page. This text is shown in the browser's title bar.
+                <pre><code>< title> HTML 5 Boilerplate < /title></code></pre>
+                </p>
+            </section>
+            <section class="main-section" id="CSS_stylesheet">
+                <header>CSS stylesheet</header>
+                <p>This code will link your custom CSS to the HTML page. <span class="code-info"> rel="stylesheet" </span>defines the relationship between the HTML file and the external stylesheet. 
+                <pre><code>< link rel="stylesheet" href="style.css"></code></pre>
+                </p>
+            </section>
+            <section class="main-section" id="Script_tags_in_HTML">
+                <header>Script tags in HTML</header>
+                <p>
+                    External script tags will be placed just before the ending body tag. This is where you can link your external JavaScript code.
+                    <pre><code>< script src="index.js"/></code></pre>
+                </p>
+            </section>
+            <section class="main-section" id="Conclusion">
+                <header>Conclusion</header>
+                <p>You should add an HTML 5 boilerplate to each of your HTML pages. This starter code contains important information like the doctype, metadata, external stylesheets and script tags.</p>
+            </section>
+        </main>
+    </body>
+</html>
