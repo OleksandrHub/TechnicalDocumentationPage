@@ -1,5 +1,5 @@
 # TechnicalDocumentationPage
-<img src="https://github.com/OleksandrHub/SurveyForm/blob/main/pr-1.PNG?raw=true" alt="project screen" width="60%" align="center">
+<img src="https://github.com/OleksandrHub/TechnicalDocumentationPage/blob/main/pr-3.PNG?raw=true" alt="project screen" width="60%" align="center">
 **Description for the third site (HTML5 Documentation):**
 
 **Project:** HTML5 documentation.
